@@ -60,9 +60,6 @@
     <Reference Include="Mono.Cecil.Mdb">
       <HintPath>dlls\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.TextEditor">
-      <HintPath>dlls\Mono.TextEditor.dll</HintPath>
-    </Reference>
     <Reference Include="MonoDevelop.Core">
       <HintPath>dlls\MonoDevelop.Core.dll</HintPath>
     </Reference>
@@ -110,6 +107,9 @@
     </Reference>
     <Reference Include="MonoDevelop.Xml">
       <HintPath>mdaddins\Xml\MonoDevelop.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.TextEditor">
+      <HintPath>dlls\Mono.TextEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
