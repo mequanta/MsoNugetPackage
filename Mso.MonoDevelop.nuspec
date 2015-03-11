@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Mso.MonoDevelop</id>
-        <version>0.2.5</version>
+        <version>0.2.6</version>
         <authors>MeQuanta</authors>
         <owners>MeQuanta</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -16,7 +16,7 @@
 		<file src="TestMonoDevelop\mdaddins\MonoDevelop.Refactoring\*.dll" target="lib\net45" />
 		<file src="TestMonoDevelop\mdaddins\SourceEditor\*.dll" target="lib\net45" />
 		<file src="TestMonoDevelop\mdaddins\Xml\*.dll" target="lib\net45" />
-		<file src="MsoPlatform\bin\Debug\MsoPlatform.dll" target="lib\net45" />
+		<file src="MsoPlatform\bin\Debug\Mso*.dll" target="lib\net45" />
 		<file src="TestMonoDevelop\mdaddins\Xml\schemas\*.*" target="content\schemas" />
     </files>
 </package>
