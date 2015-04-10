@@ -2,13 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Mso.MonoDevelop</id>
-        <version>0.2.6</version>
+        <version>0.2.7</version>
         <authors>MeQuanta</authors>
         <owners>MeQuanta</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>MonoDevelop runtime assemblies for Mequant Studio Online</description>
     </metadata>
     <files>
+	    <file src="build\*" target="build"/>
         <file src="TestMonoDevelop\dlls\*.dll" target="lib\net45" />
         <file src="TestMonoDevelop\mdaddins\BackendBindings\*.dll" target="lib\net45" />
         <file src="TestMonoDevelop\mdaddins\MonoDevelop.Debugger\*.dll" target="lib\net45" />
@@ -16,7 +17,7 @@
 		<file src="TestMonoDevelop\mdaddins\MonoDevelop.Refactoring\*.dll" target="lib\net45" />
 		<file src="TestMonoDevelop\mdaddins\SourceEditor\*.dll" target="lib\net45" />
 		<file src="TestMonoDevelop\mdaddins\Xml\*.dll" target="lib\net45" />
+		<file src="TestMonoDevelop\mdaddins\Xml\schemas\*.*" target="schemas" />
 		<file src="MsoPlatform\bin\Debug\Mso*.dll" target="lib\net45" />
-		<file src="TestMonoDevelop\mdaddins\Xml\schemas\*.*" target="content\schemas" />
     </files>
 </package>
