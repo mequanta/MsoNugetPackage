@@ -17,8 +17,8 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Externalconsole>true</Externalconsole>
     <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>full</DebugType>
@@ -40,31 +40,32 @@
     <Reference Include="Mono.Addins">
       <HintPath>..\TestMonoDevelop\dlls\Mono.Addins.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil.Mdb">
-      <HintPath>..\TestMonoDevelop\dlls\Mono.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>..\TestMonoDevelop\dlls\Mono.Cecil.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Addins.Setup">
       <HintPath>..\TestMonoDevelop\dlls\Mono.Addins.Setup.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Projects.Formats.MSBuild">
       <HintPath>..\TestMonoDevelop\dlls\MonoDevelop.Projects.Formats.MSBuild.dll</HintPath>
     </Reference>
-    <Reference Include="IKVM.Reflection">
-      <HintPath>..\TestMonoDevelop\dlls\IKVM.Reflection.dll</HintPath>
+    <Reference Include="Mono.Addins.Gui">
+      <HintPath>..\TestMonoDevelop\dlls\Mono.Addins.Gui.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Addins.CecilReflector">
+      <HintPath>..\TestMonoDevelop\dlls\Mono.Addins.CecilReflector.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\TestMonoDevelop\dlls\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\TestMonoDevelop\dlls\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>..\TestMonoDevelop\dlls\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
+    <Reference Include="IKVM.Reflection">
+      <HintPath>..\TestMonoDevelop\dlls\IKVM.Reflection.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Compile Include="..\TestMonoDevelop\Program.cs">
-      <Link>Program.cs</Link>
-    </Compile>
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MsoPlatform\MsoPlatform.csproj">
       <Project>{8D904739-0BD6-4049-A147-BB1C7925DF36}</Project>
@@ -73,5 +74,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
   </ItemGroup>
 </Project>

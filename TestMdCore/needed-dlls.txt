@@ -1,0 +1,7 @@
+Mono.Addins.CecilReflector.dll
+Mono.Addins.dll
+Mono.Addins.Gui.dll
+Mono.Addins.Setup.dll
+MonoDevelop.Core.dll
+MonoDevelop.Projects.Formats.MSBuild.dll
+MsoPlatform.dll

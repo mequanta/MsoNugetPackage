@@ -40,9 +40,6 @@
     <Reference Include="Xwt">
       <HintPath>..\TestMonoDevelop\dlls\Xwt.dll</HintPath>
     </Reference>
-    <Reference Include="Xwt.Gtk">
-      <HintPath>..\TestMonoDevelop\dlls\Xwt.Gtk.dll</HintPath>
-    </Reference>
     <Reference Include="MonoDevelop.Core">
       <HintPath>..\TestMonoDevelop\dlls\MonoDevelop.Core.dll</HintPath>
     </Reference>

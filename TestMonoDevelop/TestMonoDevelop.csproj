@@ -72,9 +72,6 @@
     <Reference Include="Xwt">
       <HintPath>dlls\Xwt.dll</HintPath>
     </Reference>
-    <Reference Include="Xwt.Gtk">
-      <HintPath>dlls\Xwt.Gtk.dll</HintPath>
-    </Reference>
     <Reference Include="ICSharpCode.NRefactory.CSharp.Refactoring">
       <HintPath>mdaddins\BackendBindings\ICSharpCode.NRefactory.CSharp.Refactoring.dll</HintPath>
     </Reference>
